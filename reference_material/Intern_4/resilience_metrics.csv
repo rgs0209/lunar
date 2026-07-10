@@ -1,0 +1,6 @@
+policy,success_rate_pct,avg_steps,avg_distance_m,avg_hazard_cells,avg_science_return,avg_energy_used,energy_efficiency_pct,recovery_pct,nominal_steps,nominal_energy,nominal_science,nominal_hazard,step_delta_vs_nominal,exec_time_ms,nominal_plan_time_ms,policy_size_kb,policy_type,onboard_suitability,onboard_score,n_scenarios_tested,n_scenarios_passed,n_scenarios_failed
+Shortest Path,80.0,232.0,7550.0,104.8,53.536,437.1,32.8,74.9,229.0,435.827,57.185,111.0,3.0,221.72,264.257,0.0,Online A*,PARTIAL — fast A* but ignores hazards; unsafe onboard,2,5,4,1
+Safest Path,100.0,274.4,8222.7,68.4,74.847,411.7,36.7,100.4,273.0,418.867,74.53,79.0,1.4,400.76,526.147,0.0,Online A*,PARTIAL — safer but needs full risk map + heap; moderate cost,3,5,5,0
+Science Priority,100.0,257.4,7895.1,72.4,74.018,405.5,37.6,101.3,255.0,411.953,73.064,78.0,2.4,354.88,420.247,0.0,Online A*,PARTIAL — same as Safest; science map also needed,3,5,5,0
+Uncertainty Aware,100.0,264.0,8095.3,73.8,79.115,424.4,34.7,102.4,260.0,429.914,77.247,83.0,4.0,396.44,411.634,0.0,Online A*,PARTIAL — highest A* cost; confidence map also needed,3,5,5,0
+Q-Learning,60.0,268.0,8439.6,79.3,81.776,433.5,33.3,60.0,268.0,440.5,81.776,79.0,0.0,0.24,300000.0,40.0,Lookup table,"YES — O(1) lookup, 40 KB",5,5,3,2

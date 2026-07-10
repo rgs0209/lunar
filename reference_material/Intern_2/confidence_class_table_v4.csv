@@ -1,0 +1,5 @@
+class_name,class_code,pixel_count,pct_of_total,pct_of_valid,mean_score,median_score,min_score,max_score
+LOW,0,5229547,39.49,50.84,0.186,0.1601,0.153,0.35
+MEDIUM,1,2568216,19.39,24.97,0.4908,0.5,0.35,0.65
+HIGH,2,2489300,18.8,24.2,0.8227,0.836,0.65,0.847
+INVALID,3,2955258,22.32,,,,,

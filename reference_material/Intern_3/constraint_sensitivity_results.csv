@@ -1,0 +1,6 @@
+test,parameter,value,n_regions,mean_score,median_score,n_high_convergence,top10_overlap_with_baseline
+weight_ice_heavy,weights,ice_heavy,1285,0.0569,0.0489,6,8
+weight_radar_heavy,weights,radar_heavy,1285,0.1016,0.0947,6,7
+weight_oh_heavy,weights,oh_heavy,1285,0.066,0.0529,6,7
+weight_mineralogy_heavy,weights,mineralogy_heavy,1285,0.0523,0.0449,6,8
+weight_equal,weights,equal_0.20,1285,0.0616,0.0543,6,8

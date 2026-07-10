@@ -1,0 +1,2 @@
+policy,train_win_rate,eval_win_rate,eval_avg_steps,eval_avg_energy,eval_avg_science,eval_avg_reward,q_table_entries,q_table_kb,train_time_s,episodes,gamma,alpha,shaping_scale,science_in_training,train_energy_budget,eval_energy_budget
+Q-Learning,100.0%,100.0%,268.0,440.5,26.508,3249.4,320000,1250.0,300.0,150000,0.99,0.1,-5.0,False,99999,650

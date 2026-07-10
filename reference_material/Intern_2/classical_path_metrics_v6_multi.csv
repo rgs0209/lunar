@@ -1,0 +1,7 @@
+region,short_km,safe_km,dist_ratio,dist_extra_%,risk_for_shortestpath,risk_for_safestpath,risk_ratio,risk_saved_%
+user_box,49.872,56.461,0.883,13.2,1055.26,435.6,0.413,58.7
+se_region,8.908,12.191,0.731,36.9,170.6,95.7,0.561,43.9
+nw_basin,10.344,11.19,0.924,8.2,337.76,252.07,0.746,25.4
+ne_region,12.918,16.628,0.777,28.7,287.72,172.28,0.599,40.1
+south_central,13.311,14.319,0.93,7.6,297.15,252.1,0.848,15.2
+crater_pastPSR,8.533,9.442,0.904,10.7,80.53,46.44,0.577,42.3

@@ -1,0 +1,5 @@
+policy,success,steps,distance_m,terrain_exposure,shadow_exposure,science_return,avg_confidence,energy_proxy,hazard_exposure,within_energy_budget,recovery_after_failure,runtime_sec
+Shortest Path,True,229,7516.41,121.546,84.64,57.185,0.681,435.827,111,True,N/A (nominal run),0.264257
+Safest Path,True,273,8140.08,110.575,12.36,74.53,0.708,418.867,79,True,N/A (nominal run),0.526147
+Science Priority,True,255,7855.76,109.178,19.64,73.064,0.694,411.953,78,True,N/A (nominal run),0.420247
+Uncertainty Aware,True,260,8032.54,103.143,62.84,77.247,0.75,429.914,83,True,N/A (nominal run),0.411634

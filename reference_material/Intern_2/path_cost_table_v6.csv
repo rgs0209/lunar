@@ -1,0 +1,10 @@
+category,cell_count,value,value_type
+Low (0.0-0.5),2314867,33.24,percent
+Moderate (0.5-1.0),2778912,39.9,percent
+High (1.0-1.5),1523022,21.87,percent
+Very high (>1.5),347100,4.98,percent
+TOTAL feasible,6963901,100.0,percent
+min,-,0.003,cost
+median,-,0.709,cost
+mean,-,0.744,cost
+max,-,1.847,cost

@@ -1,0 +1,31 @@
+scenario_id,scenario_name,scenario_description,policy,success,steps,distance_m,terrain_exposure,shadow_exposure,science_return,avg_confidence,energy_proxy,hazard_exposure,within_energy_budget,recovery_after_failure,runtime_sec,energy_budget_used
+1,Sensor Dropout,"25% of passable cells lose sensor data (terrain→0, conf→0.6)",Shortest Path,True,229,7516.41,97.669,84.64,57.185,0.667,417.473,91,True,98.6%,0.2804,650
+1,Sensor Dropout,"25% of passable cells lose sensor data (terrain→0, conf→0.6)",Safest Path,True,282,8499.7,50.071,13.16,76.09,0.654,389.398,35,True,97.3%,0.3987,650
+1,Sensor Dropout,"25% of passable cells lose sensor data (terrain→0, conf→0.6)",Science Priority,True,258,7899.7,58.465,22.44,72.836,0.661,376.152,46,True,96.6%,0.4114,650
+1,Sensor Dropout,"25% of passable cells lose sensor data (terrain→0, conf→0.6)",Uncertainty Aware,True,266,8141.12,61.39,65.68,80.541,0.748,401.681,42,True,98.5%,0.3785,650
+1,Sensor Dropout,"25% of passable cells lose sensor data (terrain→0, conf→0.6)",Q-Learning,True,268,8439.64,80.043,24.84,81.776,0.68,418.273,62,True,167.8%,0.0003,650
+2,Blocked Path,"Rows 110-120, cols 80-100 blocked (simulates rockfall/reassessment)",Shortest Path,True,241,7650.73,127.539,120.32,42.587,0.673,458.765,107,True,88.0%,0.2418,650
+2,Blocked Path,"Rows 110-120, cols 80-100 blocked (simulates rockfall/reassessment)",Safest Path,True,273,8140.08,110.575,12.36,74.53,0.708,418.867,79,True,100.0%,0.4204,650
+2,Blocked Path,"Rows 110-120, cols 80-100 blocked (simulates rockfall/reassessment)",Science Priority,True,255,7855.76,109.178,19.64,73.064,0.694,411.953,78,True,100.0%,0.3243,650
+2,Blocked Path,"Rows 110-120, cols 80-100 blocked (simulates rockfall/reassessment)",Uncertainty Aware,True,260,8032.54,103.143,62.84,77.247,0.75,429.914,83,True,100.0%,0.3888,650
+2,Blocked Path,"Rows 110-120, cols 80-100 blocked (simulates rockfall/reassessment)",Q-Learning,False,0,0.0,0.0,0.0,0.0,0.0,0.0,0,False,0% (failed),0.0003,650
+3,Limited Energy,Energy budget reduced from 650 to 430,Shortest Path,False,227,7445.7,120.225,82.64,56.637,0.681,430.916,109,False,0% (failed),0.1834,430
+3,Limited Energy,Energy budget reduced from 650 to 430,Safest Path,True,273,8140.08,110.575,12.36,74.53,0.708,418.867,79,True,100.0%,0.3593,430
+3,Limited Energy,Energy budget reduced from 650 to 430,Science Priority,True,255,7855.76,109.178,19.64,73.064,0.694,411.953,78,True,100.0%,0.3642,430
+3,Limited Energy,Energy budget reduced from 650 to 430,Uncertainty Aware,True,260,8032.54,103.143,62.84,77.247,0.75,429.914,83,True,100.0%,0.4271,430
+3,Limited Energy,Energy budget reduced from 650 to 430,Q-Learning,False,0,0.0,0.0,0.0,0.0,0.0,0.0,0,False,0% (failed),0.0002,430
+4,Wrong Resource Estimate,science_reward perturbed with Gaussian noise σ=0.3,Shortest Path,True,229,7516.41,121.546,84.64,57.185,0.681,435.827,111,True,100.0%,0.2139,650
+4,Wrong Resource Estimate,science_reward perturbed with Gaussian noise σ=0.3,Safest Path,True,273,8140.08,110.575,12.36,74.53,0.708,418.867,79,True,100.0%,0.4358,650
+4,Wrong Resource Estimate,science_reward perturbed with Gaussian noise σ=0.3,Science Priority,True,262,7978.99,114.957,21.4,78.317,0.703,421.209,84,True,100.7%,0.3374,650
+4,Wrong Resource Estimate,science_reward perturbed with Gaussian noise σ=0.3,Uncertainty Aware,True,260,8032.54,103.143,62.84,77.247,0.75,429.914,83,True,100.0%,0.4067,650
+4,Wrong Resource Estimate,science_reward perturbed with Gaussian noise σ=0.3,Q-Learning,True,268,8439.64,110.627,24.84,81.776,0.704,440.503,88,True,169.5%,0.0002,650
+5,Increased Terrain Uncertainty,terrain_risk perturbed with Gaussian noise σ=0.15,Shortest Path,True,229,7516.41,121.612,84.64,57.185,0.681,436.184,110,True,100.0%,0.1891,650
+5,Increased Terrain Uncertainty,terrain_risk perturbed with Gaussian noise σ=0.15,Safest Path,True,271,8193.63,98.272,12.92,74.557,0.703,412.488,70,True,99.7%,0.3896,650
+5,Increased Terrain Uncertainty,terrain_risk perturbed with Gaussian noise σ=0.15,Science Priority,True,257,7885.05,101.038,20.88,72.809,0.696,406.127,76,True,99.2%,0.3371,650
+5,Increased Terrain Uncertainty,terrain_risk perturbed with Gaussian noise σ=0.15,Uncertainty Aware,True,274,8237.57,95.903,64.84,83.292,0.763,430.33,78,True,100.8%,0.3811,650
+5,Increased Terrain Uncertainty,terrain_risk perturbed with Gaussian noise σ=0.15,Q-Learning,True,268,8439.64,111.46,24.84,81.776,0.704,441.652,88,True,169.4%,0.0002,650
+6,Communication Delay,Rover executes action from 5 steps ago (5-step delay),Shortest Path,True,229,7516.41,121.546,91.64,57.185,0.681,438.796,111,True,99.8%,0.2317,650
+6,Communication Delay,Rover executes action from 5 steps ago (5-step delay),Safest Path,True,273,8140.08,110.575,22.16,74.53,0.708,422.938,79,True,99.7%,0.3437,650
+6,Communication Delay,Rover executes action from 5 steps ago (5-step delay),Science Priority,True,255,7855.76,109.178,28.74,73.064,0.694,415.814,78,True,99.7%,0.3724,650
+6,Communication Delay,Rover executes action from 5 steps ago (5-step delay),Uncertainty Aware,True,260,8032.54,103.143,88.04,77.247,0.75,439.474,83,True,99.3%,0.3618,650
+6,Communication Delay,Rover executes action from 5 steps ago (5-step delay),Q-Learning,False,0,0.0,0.0,0.0,0.0,0.0,0.0,0,False,0% (failed),0.0003,650

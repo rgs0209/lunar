@@ -1,0 +1,7 @@
+constraint,operator,threshold,unit,gate,justification,reference
+slope_mean_deg,<=,20.0,degrees,Step 3b HARD REMOVE,Mean slope > 20° = crater wall or uniformly steep terrain. VIPER absolute max ~25°; 20° is conservative ceiling.,Shirley et al. 2022; NASA VIPER spec; Kobayashi 2010 J.Terramech
+slope_max_deg,<=,30.0,degrees,Step 3b HARD REMOVE,Any single pixel > 30° at 25m resolution = genuine cliff. 30° catches real untraversable features only.,LOLA 25m terrain analysis; VIPER mobility model
+pct_gt25,<=,0.1,fraction,Step 3b HARD REMOVE,> 10% of region pixels above 25° = substantial impassable zone inside region even if mean slope looks acceptable.,Derived from terrain mechanics at 25m pixel scale
+psr_fraction,<=,0.5,fraction,Step 3b HARD REMOVE,More than 50% of region permanently shadowed = rover cannot sustain solar power regardless of sun angle or season. Mazarico et al. 2011 JGR: PSR = illumination < 0.001/yr. Replaces LROC shadow_fraction gate per supervisor instruction.,Mazarico et al. 2011 JGR Planets
+lola_valid_pct,>=,0.8,fraction,Step 3b HARD REMOVE,At 50% coverage half the terrain is unmeasured. 80% ensures only small LOLA gaps remain.,Deep research report; Mars rover landing site precedent
+roughness_mean_m,<=,10.0,metres,Step 3b UNCERTAIN FLAG,Elevation std over 175m kernel. 10m = mesoscale undulation flag. UNCERTAIN not hard remove -- roughness is a gradient.,Rosenburg et al. 2011 JGR; Barker et al. 2025 PSJ
