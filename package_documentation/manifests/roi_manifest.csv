@@ -1,0 +1,3 @@
+area,row_start_25m,row_stop_25m_exclusive,col_start_25m,col_stop_25m_exclusive,height_25m,width_25m,height_5m,width_5m,left_m,bottom_m,right_m,top_m,region_ids,margin_m,reference_grid
+A,715,1500,1183,1853,785,670,3925,3350,-15913.0,7988.0,837.0,27613.0,7446;7454;4071;7584;8991;6565;6375;8949,2500,/mnt/d/Intern_Digital_Twin_Project_Files_20260519/Intern_1_feature_fusion/raster_layers/lola_downsampled_25m.tif
+B,646,1850,2090,3359,1204,1269,6020,6345,6762.0,-762.0,38487.0,29338.0,9163;10987;6912;10385;7687;12486;9162;3628,2500,/mnt/d/Intern_Digital_Twin_Project_Files_20260519/Intern_1_feature_fusion/raster_layers/lola_downsampled_25m.tif

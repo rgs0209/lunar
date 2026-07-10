@@ -1,0 +1,64 @@
+{
+  "package": "cv_intern_project_files_20260618",
+  "status": "DRAFT",
+  "created_utc": "2026-06-18T11:25:55.266976+00:00",
+  "builder": "/home/safe-ai/Project_outputs/cv_intern_project_files_20260618/build_cv_intern_package.py",
+  "reference_grid": "/mnt/d/Intern_Digital_Twin_Project_Files_20260519/Intern_1_feature_fusion/raster_layers/lola_downsampled_25m.tif",
+  "area_definition": "Intern 3 selected region bounds plus fixed 2500 m margin",
+  "areas": {
+    "A": {
+      "row_start": 715,
+      "row_stop": 1500,
+      "col_start": 1183,
+      "col_stop": 1853,
+      "region_ids": [
+        7446,
+        7454,
+        4071,
+        7584,
+        8991,
+        6565,
+        6375,
+        8949
+      ]
+    },
+    "B": {
+      "row_start": 646,
+      "row_stop": 1850,
+      "col_start": 2090,
+      "col_stop": 3359,
+      "region_ids": [
+        9163,
+        10987,
+        6912,
+        10385,
+        7687,
+        12486,
+        9162,
+        3628
+      ]
+    }
+  },
+  "rules": {
+    "decision_grid_gsd_m": 25,
+    "local_perception_grid_gsd_m": 5,
+    "shadow_codes": {
+      "0": "illuminated",
+      "1": "shadow",
+      "255": "nodata"
+    },
+    "categorical_resampling": "nearest-neighbour if later resampling is required",
+    "raw_modalities_excluded": [
+      "M3",
+      "Mini-RF",
+      "DFSAR",
+      "GRAIL"
+    ]
+  },
+  "interpretation_limits": [
+    "Internship-derived confidence, cost, region, and science layers are DRAFT outputs.",
+    "Science scores do not confirm water, ice, minerals, or resource presence.",
+    "Path cost is not measured rover energy.",
+    "A common 25 m product grid does not imply common native sensor resolution."
+  ]
+}
